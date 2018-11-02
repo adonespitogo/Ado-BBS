@@ -7,7 +7,7 @@ Create initializer in `config/initializers/adobbs.rb` and configure Adobbs:
 Adobbs.user_class = "User" # Your app's user class name. Default: "User"
 ```
 
-Install migratins:
+Install migrations:
 ```shell
 $ bin/rails adobbs:install:migrations
 $ rake db:migrate
