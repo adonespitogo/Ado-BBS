@@ -8,10 +8,15 @@ I have a rails app which is the base API for my business transactions. I wanted 
 
 The solution I can think of is to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
 
+## Dependencies
+Currently, we depend on `Devise` gem for authentication using ***email/password combination only*** and `rack-cors` gem for ajax requests to pass. Social media login maybe supported in the future.
+
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'device'
+gem 'rack-cors'
 gem 'adobbs'
 ```
 
@@ -42,13 +47,6 @@ Mount to `config/routes.rb`:
 mount Adobbs::Engine => "/api/adobbs"
 ```
 
-Enable CORS so your front-end can communicate to the rails app:
-
-Add rack-cors gem to your `Gemfile`
-```ruby
-gem 'rack-cors'
-```
-
 Configure rack-cors in `config/environment/production.rb`
 ```ruby
   Rails.application.config.middleware.insert_before 0, Rack::Cors do
@@ -62,6 +60,8 @@ Configure rack-cors in `config/environment/production.rb`
     end
   end
 ```
+
+***TODO:*** Configure devise gem
 
 ## Contributing
 Contribution directions go here.
