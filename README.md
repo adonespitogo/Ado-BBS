@@ -1,10 +1,16 @@
 # Adobbs
-Short description and motivation.
+Adobbs rails engine - API for Adobbs
 
 ## Usage
 Create initializer in `config/initializers/adobbs.rb` and configure Adobbs:
 ```ruby
 Adobbs.user_class = "User" # Your app's user class name. Default: "User"
+```
+
+Install migratins:
+```shell
+$ bin/rails adobbs:install:migrations
+$ rake db:migrate
 ```
 
 ## Installation
