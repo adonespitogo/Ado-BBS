@@ -47,7 +47,7 @@ Add rack-cors gem to your `Gemfile`:
 gem 'rack-cors'
 ```
 
-Configure rack-cors in `config/environment/[your_environment].rb`:
+Configure rack-cors in `config/environment/production.rb`:
 ```ruby
   Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
