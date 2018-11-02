@@ -6,7 +6,7 @@ It is a rails forum engine with PHP+HTML front-end which you can drop into cheap
 ## Use Case
 I have a rails app which is the base API for my business transactions. I wanted to create a forum site using a diferrent domain (ie: forum.mydomain.com), but still want to use the users' data in my main rails app.
 
-The solution I can think of was to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
+The solution I can think of is to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -41,6 +41,8 @@ Mount to `config/routes.rb`:
 ```ruby
 mount Adobbs::Engine => "/api/adobbs"
 ```
+
+Enable CORS so your front-end can communicate to our rails app:
 
 Add rack-cors gem to your `Gemfile`:
 ```ruby
