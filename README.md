@@ -13,6 +13,11 @@ $ bin/rails adobbs:install:migrations
 $ rake db:migrate
 ```
 
+Mount to `config/routes.rb`:
+```ruby
+mount Adobbs::Engine => "/api/adobbs"
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 
