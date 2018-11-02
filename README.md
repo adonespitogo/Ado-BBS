@@ -42,18 +42,18 @@ Mount to `config/routes.rb`:
 mount Adobbs::Engine => "/api/adobbs"
 ```
 
-Enable CORS so your front-end can communicate to our rails app:
+Enable CORS so your front-end can communicate to the rails app:
 
-Add rack-cors gem to your `Gemfile`:
+Add rack-cors gem to your `Gemfile`
 ```ruby
 gem 'rack-cors'
 ```
 
-Configure rack-cors in `config/environment/production.rb`:
+Configure rack-cors in `config/environment/production.rb`
 ```ruby
   Rails.application.config.middleware.insert_before 0, Rack::Cors do
     allow do
-      origins 'forum.mydomain.com' # or 'http://localhost:3000' for development
+      origins 'forum.mydomain.com' # or 'http://localhost:3000' for development.rb
       resource '*',
         :headers => :any,
         :expose  => ['access-token', 'expiry', 'token-type', 'uid', 'client'],
