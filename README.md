@@ -9,13 +9,13 @@ I have a rails app which is the base API for my business transactions. I wanted 
 The solution I can think of is to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
 
 ## Dependencies
-Currently, we depend on `Devise` gem for authentication using ***email/password combination only*** and `rack-cors` gem for ajax requests to pass. Social media login maybe supported in the future.
+Currently, we depend on `device_auth_token` gem for authentication using ***email/password combination only*** and `rack-cors` gem for ajax requests to pass. Social media login maybe supported in the future.
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'device'
+gem 'device_auth_token'
 gem 'rack-cors'
 gem 'adobbs'
 ```
