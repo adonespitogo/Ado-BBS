@@ -43,6 +43,13 @@ Mount to `config/routes.rb`:
 mount Adobbs::Engine => "/api/forum"
 ```
 
+Add cookies capability to your app for authentication:
+`config/application.rb`
+```ruby
+  config.middleware.use ActionDispatch::Cookies
+  config.middleware.use ActionDispatch::Session::CookieStore 
+```
+
 Configure rack-cors in `config/environment/production.rb`
 ```ruby
   Rails.application.config.middleware.insert_before 0, Rack::Cors do
