@@ -6,7 +6,7 @@ It is a rails 5+ api-only forum engine with PHP+HTML front-end which you can dro
 ## Use Case
 I have a rails (API-only) app which is the base API for my business transactions. I wanted to create a forum site using a diferrent domain (ie: forum.mydomain.com), and to constraint usage of the forum to my rails users only. I've looked into many forum engines and none of them seem to fit my need.
 
-The solution I can think of is to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
+The solution I can think of is to create an engine for my rails app and separate [front-end static files](https://github.com/adonespitogo/Ado-BBS-angular) that I can drop into cheap hosting sites and communicate to my main rails backend API.
 
 ## Dependencies
 Currently, we depend on `devise_token_auth` gem for authentication using ***email/password combination only***, `rack-cors` gem for ajax requests to pass, `kaminari` and `jbuilder` to build API reponses. Social media login maybe supported in the future.
