@@ -1,7 +1,7 @@
 ***This is the repository for Ado-BBS rails engine.***
 
 # Ado-BBS
-It is a rails forum engine with PHP+HTML front-end which you can drop into cheap php/html hosting sites.
+It is a rails api-only forum engine with PHP+HTML front-end which you can drop into cheap php/html hosting sites.
 
 ## Use Case
 I have a rails app which is the base API for my business transactions. I wanted to create a forum site using a diferrent domain (ie: forum.mydomain.com), but still want to use the users' data in my main rails app.
