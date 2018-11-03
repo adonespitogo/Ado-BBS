@@ -4,7 +4,7 @@
 It is a rails 5+ api-only forum engine with PHP+HTML front-end which you can drop into cheap php/html hosting sites.
 
 ## Use Case
-I have a rails app which is the base API for my business transactions. I wanted to create a forum site using a diferrent domain (ie: forum.mydomain.com), but still want to use the users' data in my main rails app.
+I have a rails app which is the base API for my business transactions. I wanted to create a forum site using a diferrent domain (ie: forum.mydomain.com), but still want to use the users' data in my main rails app. I've looked into many forum engines and none of them seem to fit my need.
 
 The solution I can think of is to create a separate front-end static files that I can drop into cheap hosting sites and communicate to my main rails backend API.
 
