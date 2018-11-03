@@ -40,7 +40,7 @@ $ rake db:migrate
 
 Mount to `config/routes.rb`:
 ```ruby
-mount Adobbs::Engine => "/api/adobbs"
+mount Adobbs::Engine => "/api/forum"
 ```
 
 Configure rack-cors in `config/environment/production.rb`
