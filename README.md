@@ -12,7 +12,7 @@ The solution I can think of is to create an engine for my rails app and separate
 Currently, we depend on `devise_token_auth` gem for authentication using ***email/password combination only***, `rack-cors` gem for ajax requests to pass, `kaminari` and `jbuilder` to build API reponses. Social media login maybe supported in the future.
 
 ## Installation
-Add this line to your application's Gemfile:
+Add these lines to your application's Gemfile:
 
 ```ruby
 gem 'devise_token_auth'
@@ -26,12 +26,6 @@ And then execute:
 ```bash
 $ bundle
 ```
-
-Or install it yourself as:
-```bash
-$ gem install adobbs
-```
-
 ## Usage
 Create initializer in `config/initializers/adobbs.rb` and configure Adobbs:
 ```ruby
