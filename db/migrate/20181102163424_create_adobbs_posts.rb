@@ -1,7 +1,7 @@
 class CreateAdobbsPosts < ActiveRecord::Migration[5.1]
   def change
     create_table :adobbs_posts do |t|
-      t.belongs_to :user, class_name: Adobbs.user_class.to_s, index: true
+      t.belongs_to :user, class_name: Adobbs.user_class.to_s, foreign_key: "user_id", index: true
       t.string :title
       t.text :body
       t.string :slug

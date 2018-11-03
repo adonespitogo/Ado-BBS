@@ -10,7 +10,8 @@ module UserClassAttrs
     has_many :comments, class_name: "Adobbs::Comment", dependent: :destroy
     has_many :received_messages, class_name: "Adobbs::Message", foreign_key: "receiver_id", dependent: :destroy
     has_many :sent_messages, class_name: "Adobbs::Message", foreign_key: "sender_id", dependent: :destroy
-    # TODO: Create notifications has_many :through
+    has_many :user_notifications, class_name: "Adobbs::UserNotification", foreign_key: "user_id", dependent: :destroy
+    has_many :notifications, class_name: "Adobbs::Notification", through: :user_notifications, dependent: :destroy
 
     #before_validation :set_author
 
